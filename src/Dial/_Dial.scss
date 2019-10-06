@@ -1,0 +1,53 @@
+.dial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+}
+
+.dial-bg {
+  height: 120px;
+  width: 120px;
+  background-image: url('../images/dial.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas {
+  font-size: 80px;
+  line-height: 50px;
+  color: #3f51b5;
+
+  &:hover {
+    color: rgb(155, 155, 235);
+    cursor: pointer;
+  }
+}
+
+.fa-caret-down {
+  margin-top: -5px;
+}
+
+

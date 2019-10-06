@@ -1,37 +1,26 @@
-import React, { Component } from "react";
-import { Knob } from "react-rotary-knob";
+import React from 'react';
 
-class Dial extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 0,
-      startVal: 0,
-      stopVal: 0
-    };
+const Dial = (props) => {
+  const increment = props.name === 'Coarse' ? 100 : 1;
+
+  const onDialClick = (e) => {
+    if (e.target.classList.contains('fa-caret-up')) {
+      props.onDialChange(increment);
+    } else {
+      props.onDialChange(-increment);
+    }
   }
 
-  render() {
-    console.log(this.state.startVal)
-    console.log("val: " + this.props.value)
-
-    let { value, onDialChange } = this.props;
-
-    return (
-      <Knob
-        min={0}
-        max={1000}
-        onStart={() => this.setState({ startVal: value })}
-        onStop={() => onDialChange(this.state.startVal - value)}
-        style={{ display: "inline-block", width: "200", height: "200" }}
-        width={200}
-        height={200}
-        unlockDistance={0}
-        preciseMode={false}
-      />
-      
-    );
-  }
+  return (
+    <article className="dial-wrapper">
+      <i aria-role="button" className="fas fa-caret-up"onClick={onDialClick}/>
+      <div className="dial-bg">
+        <h2>{props.name}</h2>
+        <p>({increment} mV)</p>
+      </div>
+      <i aria-role="button" className="fas fa-caret-down" onClick={onDialClick}/>
+    </article>
+  );
 }
 
 export default Dial;

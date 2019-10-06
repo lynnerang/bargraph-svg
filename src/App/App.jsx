@@ -4,73 +4,57 @@ import Bargraph from '../Bargraph/Bargraph';
 import Dial from '../Dial/Dial';
 
 const App = () => {
-  const [mv, setMv] = useState(0);
-  const [inputVal, setInputVal] = useState(0);
+	const [ mv, setMv ] = useState(0);
 
-  const onUpdate = (val) => {
-    setMv(val);
-    setInputVal(val);
-  }
+	const onDialChange = amount => {
+		let newVal = mv + amount;
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    onUpdate(inputVal);
-  }
+		if (newVal < 0) newVal = 0;
+		else if (newVal > 5000) newVal = 5000;
 
-  const onDialChange = (val) => {
-    // console.log("val " + val)
-    const diff = Math.abs(mv - val);
-    // console.log("diff " + diff)
-    let newVal = mv + diff;
-    // console.log("newVal " + newVal)
-    if (newVal < 5000) newVal = 5000;
-    else if (newVal < 0) newVal = 0;
+		setMv(newVal);
+	};
 
-    setMv(newVal);
-  }
-
-  const styles = {
-    fontFamily: "sans-serif",
-    textAlign: "center",
-    marginTop: "6rem"
-  };
-
-  console.log(mv)
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Bargraph Simulator 5000</h1>
-        <div style={styles}>
-          <Dial
-            width={200}
-            height={200}
-            onDialChange={onDialChange}
-            value={mv}
-          />
-        </div>
-      </header>
-      <main>
-        <Slider
-          orientation="vertical"
-          defaultValue={0}
-          value={parseInt(mv)}
-          onChange={(e, val) => onUpdate(val)}
-          aria-labelledby="slider"
-          min={0}
-          max={5000}
-        />
-        <form className="mv-entry" onSubmit={onSubmit}>
-          <label htmlFor="mv-input">mV (millivolts)</label>
-          <div>
-            <input type="number" id="mv-input" value={inputVal} onChange={(e) => setInputVal(e.target.value)}/>
-            <input type="submit" className="submit-btn" value="Go"/>
-          </div>
-        </form>
-        <Bargraph power={(mv / 50) / 20}/>
-      </main>
-    </div>
-  );
-}
+	return (
+		<div className="App">
+			<header className="App-header">
+				<h1>Bargraph Simulator 5000</h1>
+			</header>
+			<main>
+				<section className="controls">
+          <div className="controls-inner">
+            <article className="dials-wrapper">
+              <Dial name="Coarse" onDialChange={onDialChange} />
+              <Dial name="Fine" onDialChange={onDialChange} />
+            </article>
+            <article className="slider-wrapper">
+              <p className="slider-text"><span className="slider-label">MAX</span>(5000mV)</p>
+              <div className="slider-container">
+                <Slider
+                  orientation="vertical"
+                  defaultValue={0}
+                  value={parseInt(mv)}
+                  onChange={(e, val) => setMv(val)}
+                  aria-labelledby="slider"
+                  min={0}
+                  max={5000}
+                />
+              </div>
+              <p className="slider-text"><span className="slider-label">MIN</span>(0mV)</p>
+            </article>
+            <article className="volts-wrapper">
+              <p className="volts-screen">{(mv / 1000).toFixed(3)}</p>
+              <p className="volts-label"> V (Volts)</p>
+            </article>
+					</div>
+        </section>
+        <section className="wires"></section>
+        <section className="bargraph">
+          <Bargraph power={mv / 50 / 20} />
+        </section>
+			</main>
+		</div>
+	);
+};
 
 export default App;

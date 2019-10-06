@@ -1,22 +1,18 @@
 svg {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
 }
 
-.power-0.next-partial {
-  .diode-1 {
+.power-0.next-partial .diode-1 {
     fill: rgb(255, 180, 67);
-  }
 }
 
 .power-1 {
   .diode-1 {
     fill: #58df58;
   }
-  &.next-partial {
-    .diode-2 {
-      fill: rgb(255, 180, 67);
-    }
+  &.next-partial .diode-2 {
+    fill: rgb(255, 180, 67);
   }
 }
 
@@ -24,10 +20,8 @@ svg {
   .diode-1, .diode-2 {
     fill: rgb(88, 223, 88);
   }
-  &.next-partial {
-    .diode-3 {
-      fill: rgb(255, 180, 67);
-    }
+  &.next-partial .diode-3 {
+    fill: rgb(255, 180, 67);
   }
 }
 
@@ -35,10 +29,8 @@ svg {
   .diode-1, .diode-2, .diode-3 {
     fill: rgb(88, 223, 88);
   }
-  &.next-partial {
-    .diode-4 {
-      fill: rgb(255, 180, 67);
-    }
+  &.next-partial .diode-4 {
+    fill: rgb(255, 180, 67);
   }
 }
 
@@ -46,10 +38,8 @@ svg {
   .diode-1, .diode-2, .diode-3, .diode-4 {
     fill: rgb(88, 223, 88);
   }
-  &.next-partial {
-    .diode-5 {
-      fill: rgb(255, 180, 67);
-    }
+  &.next-partial .diode-5 {
+    fill: rgb(255, 180, 67);
   }
 }
 
