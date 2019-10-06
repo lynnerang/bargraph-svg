@@ -13,8 +13,8 @@ header {
 }
 
 h1 {
-  font-family: 'Permanent Marker', sans-serif;
-  font-size: 50px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 40px;
   color: #96CA4F;
 }
 
@@ -119,6 +119,8 @@ main {
 @media (max-width: 1200px) { 
   main {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .wires {
@@ -139,20 +141,22 @@ main {
 
 @media (max-width: 700px) { 
   header {
-    height: 50px;
+    height: 56px;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   main {
     padding: 20px 10px;
+    min-height: calc(100vh - 56px);
   }
 
   .controls {
     border: none;
     padding: 0;
+    background: none;
   }
 
   .controls-inner {
@@ -162,6 +166,7 @@ main {
 
   .slider-wrapper {
     margin: 0;
+    flex: auto;
   }
 
   .slider-container {
@@ -173,11 +178,40 @@ main {
     padding-bottom: 2px;
     width: 80px;
     font-size: 30px;
-    font-family: 'digital-7', sans-serif;
   }
 
   .volts-label {
     font-size: 12px;
   }
-  
+}
+
+@media (max-width: 420px) { 
+  h1 {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 0;
+    border-bottom: 40px solid black;
+  }
+
+  .controls-inner {
+    padding: 20px 0;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 0;
+  }
+
+  .slider-text {
+    font-size: 10px;
+  }
+
+  .volts-screen {
+    width: 60px;
+    font-size: 20px;
+  }
+
+  .volts-label {
+    font-size: 12px;
+  }
 }

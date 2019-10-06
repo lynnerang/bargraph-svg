@@ -48,3 +48,11 @@ svg {
     fill: rgb(88, 223, 88);
   }
 }
+
+@media (max-width: 420px) { 
+  svg {
+    width: 250px;
+    height: 175px;
+    margin-top: -3px;
+  }
+}

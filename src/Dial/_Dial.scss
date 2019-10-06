@@ -60,3 +60,26 @@
     }
   }
 }
+
+@media (max-width: 420px) { 
+  .dial-wrapper {
+    margin: 8px;
+  }
+
+  .dial-bg {
+    height: 70px;
+    width: 70px;
+
+    .dial-name {
+      font-size: 12px;
+    }
+
+    .dial-label {
+      font-size: 9px;
+    }
+  }
+
+  .fas {
+    font-size: 50px;
+  }
+}
