@@ -43,13 +43,13 @@ const App = () => {
               <p className="slider-text"><span className="slider-label">MIN</span>(0mV)</p>
             </article>
             <article className="volts-wrapper">
-              <p className="volts-screen">{(mv / 1000).toFixed(3)}</p>
+              <p className="volts-screen" aria-live="polite">{(mv / 1000).toFixed(3)}</p>
               <p className="volts-label"> V (Volts)</p>
             </article>
 					</div>
         </section>
         <section className="wires"></section>
-        <section className="bargraph">
+        <section aria-hidden className="bargraph">
           <Bargraph power={mv / 50 / 20} />
         </section>
 			</main>

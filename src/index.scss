@@ -2,6 +2,11 @@
 @import './Bargraph/_Bargraph.scss';
 @import './Dial/_Dial.scss';
 
+@font-face {
+  font-family: 'digital-7';
+  src: local('digital-7'), url('./fonts/digital-7.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

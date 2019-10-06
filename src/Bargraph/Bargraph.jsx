@@ -6,7 +6,7 @@ const Bargraph = (props) => {
     const { power } = props;
     let result = `power-${Math.floor(power)}`;
     
-    return power % 1 == 0 ? result : `${result} next-partial`;
+    return power % 1 === 0 ? result : `${result} next-partial`;
   }
 
   return (

@@ -13,12 +13,12 @@ const Dial = (props) => {
 
   return (
     <article className="dial-wrapper">
-      <i aria-role="button" className="fas fa-caret-up"onClick={onDialClick}/>
+      <button><i className="fas fa-caret-up" onClick={onDialClick}/></button>
       <div className="dial-bg">
-        <h2>{props.name}</h2>
-        <p>({increment} mV)</p>
+        <h2 className="dial-name">{props.name}</h2>
+        <p className="dial-label">({increment} mV)</p>
       </div>
-      <i aria-role="button" className="fas fa-caret-down" onClick={onDialClick}/>
+      <button><i className="fas fa-caret-down" onClick={onDialClick}/></button>
     </article>
   );
 }
