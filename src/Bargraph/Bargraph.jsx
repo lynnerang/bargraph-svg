@@ -10,15 +10,12 @@ const Bargraph = (props) => {
   }
 
   return (
-    <SvgLoader
-      className={getClass()}
-      path={require('../o9-Bargraph-01.svg')}
-    >
-      <SvgProxy selector="rect" class="st0 non-diode" />
-      <SvgProxy selector="rect.st0:nth-of-type(n+3):nth-of-type(even)" class="st0 diode" />
-      <SvgProxy selector=".diode" fill="magenta"/>
-      {/* <SvgProxy selector="rect.st0:nth-of-type(n+4)" class="st0 diode" /> */}
-      {/* <SvgProxy selector="rect.st0:nth-of-type(n+4):nth-of-type(-n+12)" class="st0 light" /> */}
+    <SvgLoader className={getClass()} path={require('../o9-Bargraph-01.svg')}>
+      <SvgProxy selector="rect:nth-of-type(4)" class="st0 diode-5" />
+      <SvgProxy selector="rect:nth-of-type(6)" class="st0 diode-4" />
+      <SvgProxy selector="rect:nth-of-type(8)" class="st0 diode-3" />
+      <SvgProxy selector="rect:nth-of-type(10)" class="st0 diode-2" />
+      <SvgProxy selector="rect:nth-of-type(12)" class="st0 diode-1" />
     </SvgLoader>
   );
 };
