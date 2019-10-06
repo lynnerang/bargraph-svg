@@ -1,0 +1,124 @@
+svg {
+  width: 300px;
+  height: 200px;
+}
+
+// .diode-0.next-partial {
+//   .st0:nth-of-type(n+11):nth-of-type(-n+12) {
+//     fill: rgb(255, 180, 67);
+//   }
+// }
+
+// .diode-1 {
+//   .st0:nth-of-type(n+11):nth-of-type(-n+12) {
+//     fill: #58df58;
+//   }
+//   &.next-partial {
+//     .st0:nth-of-type(n+10):nth-of-type(-n+11) {
+//       fill: rgb(255, 180, 67);
+//     }
+//   }
+// }
+
+// .diode-2 {
+//   .st0:nth-of-type(n+10):nth-of-type(-n+12) {
+//     fill: rgb(88, 223, 88);
+//   }
+//   &.next-partial {
+//     .st0:nth-of-type(n+8):nth-of-type(-n+9) {
+//       fill: rgb(255, 180, 67);
+//     }
+//   }
+// }
+
+// .diode-3 {
+//   .st0:nth-of-type(n+8):nth-of-type(-n+12) {
+//     fill: rgb(88, 223, 88);
+//   }
+//   &.next-partial {
+//     .st0:nth-of-type(n+6):nth-of-type(-n+7) {
+//       fill: rgb(255, 180, 67);
+//     }
+//   }
+// }
+
+// .diode-4 {
+//   .st0:nth-of-type(n+6):nth-of-type(-n+12) {
+//     fill: rgb(88, 223, 88);
+//   }
+//   &.next-partial {
+//     .st0:nth-of-type(n+4):nth-of-type(-n+5) {
+//       fill: rgb(255, 180, 67);
+//     }
+//   }
+// }
+
+// .diode-5 {
+//   .st0:nth-of-type(n+4):nth-of-type(-n+12) {
+//     fill: rgb(88, 223, 88);
+//   }
+// }
+
+.diode {
+  fill: red!important;
+}
+
+.power-0.next-partial {
+  .diode:nth-of-type(n+11):nth-of-type(-n+12) {
+    fill: rgb(255, 180, 67);
+  }
+}
+
+.power-1 {
+  .diode:nth-of-type(n+11):nth-of-type(-n+12) {
+    fill: #58df58;
+  }
+  &.next-partial {
+    .diode:nth-of-type(n+10):nth-of-type(-n+11) {
+      fill: rgb(255, 180, 67);
+    }
+  }
+}
+
+.power-2 {
+  .diode:nth-of-type(n+10):nth-of-type(-n+12) {
+    fill: rgb(88, 223, 88);
+  }
+  &.next-partial {
+    .diode:nth-of-type(n+8):nth-of-type(-n+9) {
+      fill: rgb(255, 180, 67);
+    }
+  }
+}
+
+.power-3 {
+  .diode:nth-of-type(n+8):nth-of-type(-n+12) {
+    fill: rgb(88, 223, 88);
+  }
+  &.next-partial {
+    .diode:nth-of-type(n+6):nth-of-type(-n+7) {
+      fill: rgb(255, 180, 67);
+    }
+  }
+}
+
+.power-4 {
+  .diode:nth-of-type(n+6):nth-of-type(-n+12) {
+    fill: rgb(88, 223, 88);
+  }
+  &.next-partial {
+    .diode:nth-of-type(n+4):nth-of-type(-n+5) {
+      fill: rgb(255, 180, 67);
+    }
+  }
+}
+
+.power-5 {
+  .diode {
+    fill: rgb(88, 223, 88);
+  }
+}
+
+.light {
+  fill: red!important;
+}
