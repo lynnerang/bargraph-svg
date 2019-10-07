@@ -267,10 +267,9 @@ exports[`App matches the snapshot 1`] = `
         className="bargraph"
       >
         <Bargraph
-          power={0}
+          volts={0}
         >
           <SvgLoader
-            className="power-0"
             onSVGReady={[Function]}
             path="o9-Bargraph-01.svg"
             style={null}
@@ -278,13 +277,11 @@ exports[`App matches the snapshot 1`] = `
           >
             <ReactSVG
               callback={[Function]}
-              className="power-0"
               path="o9-Bargraph-01.svg"
               style={null}
               svgXML={null}
             >
               <svg
-                className="power-0"
                 data-src="o9-Bargraph-01.svg"
                 style={null}
               />
