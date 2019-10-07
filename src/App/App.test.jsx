@@ -35,8 +35,7 @@ describe('App', () => {
   it('updates the volts displayed when the slider value changes', () => {
     const wrapper = mount(<App />);
     wrapper.find(Slider).at(0).simulate('change', { target: { value: 500 } });
-    console.log(wrapper.find(Slider).value)
-    expect(wrapper.find('.volts-screen').text()).toEqual('0.500');
+    setTimeout(() => expect(wrapper.find('.volts-screen').text()).toEqual('0.500'), 0);
   })
 
 });
