@@ -26,10 +26,10 @@ This is a single page application build in React using an SVG loader library.  I
 ### Receiving max volts
 ![Receiving max volts](/screenshots/3.png)
 
-### Tablet view
+### Tablet view (iPad)
 ![Tablet view](/screenshots/4.png)
 
-### Mobile view
+### Mobile view (iPhone SE)
 ![Mobile view](/screenshots/5.png)
 
 
@@ -69,9 +69,9 @@ Then, go to `http://localhost:3000/` in your browser to see the code running in 
 
 ## Ideas for Improvements
 
-1. One drawback I see with the way this app is that the isolation of the LEDs in the svg are based on their position in the overall image.  If one layer/path/rect were inserted at the top, it would invalidate the way the LED rects are being targeted.  I'd be curious with more time to explore better ways of doing this that would be less fragile to changes to the svg (beyond asking a designer to add unique identifiers or wrap the rects in a separate group).
-2. I'd love to chat with anyone who finds this project interesting and learn what other features they would have fun using in this representation of the Bargraph and iterate based on their feedback.
-3. Adding a PWM module.
+1. Allow users to enter an exact figure for the milliVolts.
+2. Chat with electrical engineers about other potential features/upgrades I could add.
+3. Add a PWM module.
 
 
 ## Project Emphasis
