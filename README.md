@@ -1,5 +1,3 @@
-
-
 ## Table of contents
 * [Intro](#Bargraph-Simulator)
 * [Screenshots](#Screenshots)
@@ -13,16 +11,25 @@
 
 This project is a code challenge I completed as part of my application to a Software Engineer role on the newly acquired littleBits team at Sphero.  The app is fully responsive down to 320px (iPhone SE).
 
-This is a single page application build in React using an SVG loader library.  It simulated the littleBits Bargraph product that displays the amount of voltage it is receiving.  This app allows the user to control the amount of millivolts sent to the Bargraph using Coarse and Fine adjustment (increments of 100 or 1 mV) or a slider from 0 to 5000 mV, and it shows how much power out of five volts the Bargraph is receiving in colored squares representing the Bargraph LEDs.  The green LEDs represent full volts of power while the amber represents partial power.
+This is a single page application build in React using an SVG loader library.  It simulated the littleBits Bargraph product that displays the amount of voltage it is receiving.  This app allows the user to control the amount of milliVolts sent to the Bargraph using Coarse and Fine adjustment (increments of 100 or 1 mV) or a slider from 0 to 5000 mV.  It shows how many volts (0-5V) are being output to the Bargraph, displayed as colored rectangles representing the Bargraph LEDs.  A green LED represents one Volt while the amber represents 0 > 1 / partial Volt.
 
 
 ## Screenshots
 
-![Landing page](/screenshots/1.png)
-![Receiving some power](/screenshots/2.png)
-![Receiving max power](/screenshots/3.png)
+### Landing screen
+![Landing screen](/screenshots/1.png)
+
+### Receiving some voltage
+![Receiving some voltage](/screenshots/2.png)
+
+### Receiving max volts
+![Receiving max volts](/screenshots/3.png)
+
+### Tablet view
 ![Tablet view](/screenshots/4.png)
-![Mobile view](/src/screenshots/5.png)
+
+### Mobile view
+![Mobile view](/screenshots/5.png)
 
 
 ## Getting Started
