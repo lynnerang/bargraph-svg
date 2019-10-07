@@ -83,4 +83,4 @@ This project was an exciting opportunity for me to brush up on my knowledge of e
 
 ## Licensing
 
-All credit goes to <a href="https://littlebits.com/">littleBits</a> and <a href="sphero.com">Sphero</a> for their ownership of the <a hred="https://littlebits.com/products/bargraph?_pos=1&_sid=717bafac4&_ss=r">Bargraph</a> product and specifications of this code challenge.
+All credit goes to <a href="https://littlebits.com/">littleBits</a> and <a href="sphero.com">Sphero</a> for their ownership of the <a href="https://littlebits.com/products/bargraph?_pos=1&_sid=717bafac4&_ss=r">Bargraph</a> product and specifications of this code challenge.
