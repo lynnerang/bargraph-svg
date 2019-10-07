@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 import Image from '../images/o9-Bargraph-01.svg';
+import PropTypes from 'prop-types';
 
 const Bargraph = (props) => {
   const getClass = () => {
@@ -19,6 +20,10 @@ const Bargraph = (props) => {
       <SvgProxy selector="rect:nth-of-type(12)" class="st0 diode-1" />
     </SvgLoader>
   );
+};
+
+Bargraph.propTypes = {
+  power: PropTypes.number
 };
 
 export default Bargraph;

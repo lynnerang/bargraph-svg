@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Dial = (props) => {
   const increment = props.name === 'Coarse' ? 100 : 1;
@@ -22,5 +23,10 @@ const Dial = (props) => {
     </article>
   );
 }
+
+Dial.propTypes = {
+  name: PropTypes.string,
+  onDialChange: PropTypes.func
+};
 
 export default Dial;
