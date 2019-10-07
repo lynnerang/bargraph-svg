@@ -49,6 +49,14 @@ svg {
   }
 }
 
+.active {
+  fill: rgb(88, 223, 88)!important;
+}
+
+.partial {
+  fill: rgb(255, 180, 67);
+}
+
 @media (max-width: 420px) { 
   svg {
     width: 250px;
