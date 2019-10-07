@@ -31,6 +31,7 @@ const App = () => {
               <p className="slider-text"><span className="slider-label">MAX</span>(5000mV)</p>
               <div className="slider-container">
                 <Slider
+                  name="slider-input"
                   orientation="vertical"
                   defaultValue={0}
                   value={parseInt(mv)}

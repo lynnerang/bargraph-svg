@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches the snapshot 1`] = `
+<App>
+  <div
+    className="App"
+  >
+    <header
+      className="App-header"
+    >
+      <h1>
+        Bargraph Simulator 5000
+      </h1>
+    </header>
+    <main>
+      <section
+        className="controls"
+      >
+        <div
+          className="controls-inner"
+        >
+          <article
+            className="dials-wrapper"
+          >
+            <Dial
+              name="Coarse"
+              onDialChange={[Function]}
+            >
+              <article
+                className="dial-wrapper"
+              >
+                <button>
+                  <i
+                    className="fas fa-caret-up"
+                    onClick={[Function]}
+                  />
+                </button>
+                <div
+                  className="dial-bg"
+                >
+                  <h2
+                    className="dial-name"
+                  >
+                    Coarse
+                  </h2>
+                  <p
+                    className="dial-label"
+                  >
+                    (
+                    100
+                     mV)
+                  </p>
+                </div>
+                <button>
+                  <i
+                    className="fas fa-caret-down"
+                    onClick={[Function]}
+                  />
+                </button>
+              </article>
+            </Dial>
+            <Dial
+              name="Fine"
+              onDialChange={[Function]}
+            >
+              <article
+                className="dial-wrapper"
+              >
+                <button>
+                  <i
+                    className="fas fa-caret-up"
+                    onClick={[Function]}
+                  />
+                </button>
+                <div
+                  className="dial-bg"
+                >
+                  <h2
+                    className="dial-name"
+                  >
+                    Fine
+                  </h2>
+                  <p
+                    className="dial-label"
+                  >
+                    (
+                    1
+                     mV)
+                  </p>
+                </div>
+                <button>
+                  <i
+                    className="fas fa-caret-down"
+                    onClick={[Function]}
+                  />
+                </button>
+              </article>
+            </Dial>
+          </article>
+          <article
+            className="slider-wrapper"
+          >
+            <p
+              className="slider-text"
+            >
+              <span
+                className="slider-label"
+              >
+                MAX
+              </span>
+              (5000mV)
+            </p>
+            <div
+              className="slider-container"
+            >
+              <WithStyles(ForwardRef(Slider))
+                aria-labelledby="slider"
+                defaultValue={0}
+                max={5000}
+                min={0}
+                name="slider-input"
+                onChange={[Function]}
+                orientation="vertical"
+                value={0}
+              >
+                <ForwardRef(Slider)
+                  aria-labelledby="slider"
+                  classes={
+                    Object {
+                      "active": "MuiSlider-active",
+                      "colorPrimary": "MuiSlider-colorPrimary",
+                      "colorSecondary": "MuiSlider-colorSecondary",
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "mark": "MuiSlider-mark",
+                      "markActive": "MuiSlider-markActive",
+                      "markLabel": "MuiSlider-markLabel",
+                      "markLabelActive": "MuiSlider-markLabelActive",
+                      "marked": "MuiSlider-marked",
+                      "rail": "MuiSlider-rail",
+                      "root": "MuiSlider-root",
+                      "thumb": "MuiSlider-thumb",
+                      "thumbColorPrimary": "MuiSlider-thumbColorPrimary",
+                      "thumbColorSecondary": "MuiSlider-thumbColorSecondary",
+                      "track": "MuiSlider-track",
+                      "valueLabel": "MuiSlider-valueLabel",
+                      "vertical": "MuiSlider-vertical",
+                    }
+                  }
+                  defaultValue={0}
+                  max={5000}
+                  min={0}
+                  name="slider-input"
+                  onChange={[Function]}
+                  orientation="vertical"
+                  value={0}
+                >
+                  <span
+                    className="MuiSlider-root MuiSlider-colorPrimary MuiSlider-vertical"
+                    onMouseDown={[Function]}
+                  >
+                    <span
+                      className="MuiSlider-rail"
+                    />
+                    <span
+                      className="MuiSlider-track"
+                      style={
+                        Object {
+                          "bottom": "0%",
+                          "height": "0%",
+                        }
+                      }
+                    />
+                    <input
+                      name="slider-input"
+                      type="hidden"
+                      value="0"
+                    />
+                    <WithStyles(ValueLabel)
+                      className="MuiSlider-valueLabel"
+                      disabled={false}
+                      index={0}
+                      key="0"
+                      open={false}
+                      value={0}
+                      valueLabelDisplay="off"
+                      valueLabelFormat={[Function]}
+                    >
+                      <ValueLabel
+                        className="MuiSlider-valueLabel"
+                        classes={
+                          Object {
+                            "circle": "PrivateValueLabel-circle-45",
+                            "label": "PrivateValueLabel-label-46",
+                            "offset": "PrivateValueLabel-offset-44",
+                            "open": "PrivateValueLabel-open-43",
+                            "thumb": "PrivateValueLabel-thumb-42",
+                          }
+                        }
+                        disabled={false}
+                        index={0}
+                        open={false}
+                        value={0}
+                        valueLabelDisplay="off"
+                        valueLabelFormat={[Function]}
+                      >
+                        <span
+                          aria-labelledby="slider"
+                          aria-orientation="vertical"
+                          aria-valuemax={5000}
+                          aria-valuemin={0}
+                          aria-valuenow={0}
+                          className="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+                          data-index={0}
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseOver={[Function]}
+                          role="slider"
+                          style={
+                            Object {
+                              "bottom": "0%",
+                            }
+                          }
+                          tabIndex={0}
+                        />
+                      </ValueLabel>
+                    </WithStyles(ValueLabel)>
+                  </span>
+                </ForwardRef(Slider)>
+              </WithStyles(ForwardRef(Slider))>
+            </div>
+            <p
+              className="slider-text"
+            >
+              <span
+                className="slider-label"
+              >
+                MIN
+              </span>
+              (0mV)
+            </p>
+          </article>
+          <article
+            className="volts-wrapper"
+          >
+            <p
+              aria-live="polite"
+              className="volts-screen"
+            >
+              0.000
+            </p>
+            <p
+              className="volts-label"
+            >
+               V (Volts)
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        className="wires"
+      />
+      <section
+        aria-hidden={true}
+        className="bargraph"
+      >
+        <Bargraph
+          power={0}
+        >
+          <SvgLoader
+            className="power-0"
+            onSVGReady={[Function]}
+            path="o9-Bargraph-01.svg"
+            style={null}
+            svgXML={null}
+          >
+            <ReactSVG
+              callback={[Function]}
+              className="power-0"
+              path="o9-Bargraph-01.svg"
+              style={null}
+              svgXML={null}
+            >
+              <svg
+                className="power-0"
+                data-src="o9-Bargraph-01.svg"
+                style={null}
+              />
+            </ReactSVG>
+          </SvgLoader>
+        </Bargraph>
+      </section>
+    </main>
+  </div>
+</App>
+`;

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dial matches the snapshot with name of "Coarse" 1`] = `
+<Dial
+  name="Coarse"
+>
+  <article
+    className="dial-wrapper"
+  >
+    <button>
+      <i
+        className="fas fa-caret-up"
+        onClick={[Function]}
+      />
+    </button>
+    <div
+      className="dial-bg"
+    >
+      <h2
+        className="dial-name"
+      >
+        Coarse
+      </h2>
+      <p
+        className="dial-label"
+      >
+        (
+        100
+         mV)
+      </p>
+    </div>
+    <button>
+      <i
+        className="fas fa-caret-down"
+        onClick={[Function]}
+      />
+    </button>
+  </article>
+</Dial>
+`;
+
+exports[`Dial matches the snapshot with name of "Fine" 1`] = `
+<Dial
+  name="Fine"
+>
+  <article
+    className="dial-wrapper"
+  >
+    <button>
+      <i
+        className="fas fa-caret-up"
+        onClick={[Function]}
+      />
+    </button>
+    <div
+      className="dial-bg"
+    >
+      <h2
+        className="dial-name"
+      >
+        Fine
+      </h2>
+      <p
+        className="dial-label"
+      >
+        (
+        1
+         mV)
+      </p>
+    </div>
+    <button>
+      <i
+        className="fas fa-caret-down"
+        onClick={[Function]}
+      />
+    </button>
+  </article>
+</Dial>
+`;
