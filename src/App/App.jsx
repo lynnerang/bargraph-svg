@@ -51,7 +51,7 @@ const App = () => {
         </section>
         <section className="wires"></section>
         <section aria-hidden className="bargraph">
-          <Bargraph power={mv / 50 / 20} />
+          <Bargraph volts={mv / 50 / 20} />
         </section>
 			</main>
 		</div>

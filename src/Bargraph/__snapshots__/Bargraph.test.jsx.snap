@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Bargraph matches the snapshot with power of 0 1`] = `
+exports[`Bargraph matches the snapshot when volts is not a whole integer 1`] = `
 <Bargraph
-  power={0}
+  volts={4.532}
 >
   <SvgLoader
-    className="power-0"
     onSVGReady={[Function]}
     path="o9-Bargraph-01.svg"
     style={null}
@@ -13,13 +12,11 @@ exports[`Bargraph matches the snapshot with power of 0 1`] = `
   >
     <ReactSVG
       callback={[Function]}
-      className="power-0"
       path="o9-Bargraph-01.svg"
       style={null}
       svgXML={null}
     >
       <svg
-        className="power-0"
         data-src="o9-Bargraph-01.svg"
         style={null}
       />
@@ -28,12 +25,11 @@ exports[`Bargraph matches the snapshot with power of 0 1`] = `
 </Bargraph>
 `;
 
-exports[`Bargraph matches the snapshot with power of 1 1`] = `
+exports[`Bargraph matches the snapshot with volts of 0 1`] = `
 <Bargraph
-  power={1}
+  volts={0}
 >
   <SvgLoader
-    className="power-1"
     onSVGReady={[Function]}
     path="o9-Bargraph-01.svg"
     style={null}
@@ -41,13 +37,11 @@ exports[`Bargraph matches the snapshot with power of 1 1`] = `
   >
     <ReactSVG
       callback={[Function]}
-      className="power-1"
       path="o9-Bargraph-01.svg"
       style={null}
       svgXML={null}
     >
       <svg
-        className="power-1"
         data-src="o9-Bargraph-01.svg"
         style={null}
       />
@@ -56,12 +50,11 @@ exports[`Bargraph matches the snapshot with power of 1 1`] = `
 </Bargraph>
 `;
 
-exports[`Bargraph matches the snapshot with power of 2 1`] = `
+exports[`Bargraph matches the snapshot with volts of 1 1`] = `
 <Bargraph
-  power={2}
+  volts={1}
 >
   <SvgLoader
-    className="power-2"
     onSVGReady={[Function]}
     path="o9-Bargraph-01.svg"
     style={null}
@@ -69,13 +62,11 @@ exports[`Bargraph matches the snapshot with power of 2 1`] = `
   >
     <ReactSVG
       callback={[Function]}
-      className="power-2"
       path="o9-Bargraph-01.svg"
       style={null}
       svgXML={null}
     >
       <svg
-        className="power-2"
         data-src="o9-Bargraph-01.svg"
         style={null}
       />
@@ -84,12 +75,11 @@ exports[`Bargraph matches the snapshot with power of 2 1`] = `
 </Bargraph>
 `;
 
-exports[`Bargraph matches the snapshot with power of 3 1`] = `
+exports[`Bargraph matches the snapshot with volts of 2 1`] = `
 <Bargraph
-  power={3}
+  volts={2}
 >
   <SvgLoader
-    className="power-3"
     onSVGReady={[Function]}
     path="o9-Bargraph-01.svg"
     style={null}
@@ -97,13 +87,11 @@ exports[`Bargraph matches the snapshot with power of 3 1`] = `
   >
     <ReactSVG
       callback={[Function]}
-      className="power-3"
       path="o9-Bargraph-01.svg"
       style={null}
       svgXML={null}
     >
       <svg
-        className="power-3"
         data-src="o9-Bargraph-01.svg"
         style={null}
       />
@@ -112,12 +100,11 @@ exports[`Bargraph matches the snapshot with power of 3 1`] = `
 </Bargraph>
 `;
 
-exports[`Bargraph matches the snapshot with power of 4 1`] = `
+exports[`Bargraph matches the snapshot with volts of 3 1`] = `
 <Bargraph
-  power={4}
+  volts={3}
 >
   <SvgLoader
-    className="power-4"
     onSVGReady={[Function]}
     path="o9-Bargraph-01.svg"
     style={null}
@@ -125,13 +112,11 @@ exports[`Bargraph matches the snapshot with power of 4 1`] = `
   >
     <ReactSVG
       callback={[Function]}
-      className="power-4"
       path="o9-Bargraph-01.svg"
       style={null}
       svgXML={null}
     >
       <svg
-        className="power-4"
         data-src="o9-Bargraph-01.svg"
         style={null}
       />
@@ -140,12 +125,11 @@ exports[`Bargraph matches the snapshot with power of 4 1`] = `
 </Bargraph>
 `;
 
-exports[`Bargraph matches the snapshot with power of 5 1`] = `
+exports[`Bargraph matches the snapshot with volts of 4 1`] = `
 <Bargraph
-  power={5}
+  volts={4}
 >
   <SvgLoader
-    className="power-5"
     onSVGReady={[Function]}
     path="o9-Bargraph-01.svg"
     style={null}
@@ -153,13 +137,36 @@ exports[`Bargraph matches the snapshot with power of 5 1`] = `
   >
     <ReactSVG
       callback={[Function]}
-      className="power-5"
       path="o9-Bargraph-01.svg"
       style={null}
       svgXML={null}
     >
       <svg
-        className="power-5"
+        data-src="o9-Bargraph-01.svg"
+        style={null}
+      />
+    </ReactSVG>
+  </SvgLoader>
+</Bargraph>
+`;
+
+exports[`Bargraph matches the snapshot with volts of 5 1`] = `
+<Bargraph
+  volts={5}
+>
+  <SvgLoader
+    onSVGReady={[Function]}
+    path="o9-Bargraph-01.svg"
+    style={null}
+    svgXML={null}
+  >
+    <ReactSVG
+      callback={[Function]}
+      path="o9-Bargraph-01.svg"
+      style={null}
+      svgXML={null}
+    >
+      <svg
         data-src="o9-Bargraph-01.svg"
         style={null}
       />
